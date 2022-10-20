@@ -1,6 +1,6 @@
 {
   "name": "@tipalti/percy-cli",
-  "version": "1.13.0",
+  "version": "1.14.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -30,13 +30,13 @@
     "test:coverage": "yarn test --coverage"
   },
   "dependencies": {
-    "@tipalti/percy-cli-app": "^1.13.0",
-    "@tipalti/percy-cli-build": "^1.13.0",
-    "@tipalti/percy-cli-command": "^1.13.0",
-    "@tipalti/percy-cli-config": "^1.13.0",
-    "@tipalti/percy-cli-exec": "^1.13.0",
-    "@tipalti/percy-cli-snapshot": "^1.13.0",
-    "@tipalti/percy-cli-upload": "^1.13.0",
+    "@tipalti/percy-cli-app": "^1.14.0",
+    "@tipalti/percy-cli-build": "^1.14.0",
+    "@tipalti/percy-cli-command": "^1.14.0",
+    "@tipalti/percy-cli-config": "^1.14.0",
+    "@tipalti/percy-cli-exec": "^1.14.0",
+    "@tipalti/percy-cli-snapshot": "^1.14.0",
+    "@tipalti/percy-cli-upload": "^1.14.0",
     "@tipalti/percy-client": "^1.13.0",
     "@tipalti/percy-logger": "^1.12.0"
   }
