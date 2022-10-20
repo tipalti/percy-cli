@@ -1,5 +1,7 @@
 # Percy CLI
 
+THIS REPO IS AN EXAMPLE FOR TRYING TO MITIGATE THE SHADOM DOM SUPPORT AND IS NOT PRODUCTION READY!
+
 [![Test](https://github.com/tipalti/percy-cli/workflows/Test/badge.svg)](https://github.com/tipalti/percy-cli/actions)
 
 The Percy CLI is used to interact with, and upload snapshots to, [percy.io](https://percy.io) via
