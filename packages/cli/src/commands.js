@@ -31,7 +31,7 @@ function findModulePackages(dir) {
     return reduceFiles(dir, async (roots, file) => {
       let rootPath = path.join(dir, file.name);
 
-      if (file.name === '@percy') {
+      if (file.name === '@tipalti') {
         return roots.concat(await reduceFiles(rootPath, (dirs, f) => (
           // specifically protect against files to allow linked directories
           f.isFile() ? dirs : dirs.concat(path.join(rootPath, f.name))
@@ -49,7 +49,7 @@ function findModulePackages(dir) {
 }
 
 // Used by `findPnpPackages` to filter Percy CLI plugins
-const PERCY_PKG_REG = /^(@percy\/|percy-cli-)/;
+const PERCY_PKG_REG = /^(@tipalti\/|percy-cli-)/;
 
 // Returns the paths of potential percy packages found within yarn's pnp system
 function findPnpPackages(dir) {

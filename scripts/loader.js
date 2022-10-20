@@ -4,7 +4,7 @@ import path from 'path';
 import babel from '@babel/core';
 
 const ROOT = path.resolve(url.fileURLToPath(import.meta.url), '../..');
-const BABEL_REG = /(\/|\\)(@percy|packages)\1(.+?)\1(src|test|.*\\.js)/;
+const BABEL_REG = /(\/|\\)(@tipalti|packages)\1(.+?)\1(src|test|.*\\.js)/;
 const CJS_REG = /(^|\n)(module\.)?(exports)/;
 const MOCK_REG = /^mock:\/\/|\?.+$/g;
 
@@ -24,7 +24,7 @@ export const MOCK_IMPORTS = global.__MOCK_IMPORTS__ = global.__MOCK_IMPORTS__ ||
 
 // matches and rewrites internal imports into absolute src paths
 export const LOADER_ALIAS = {
-  find: /^@percy\/([^/]+)(?:\/(.+))?$|(^[./]+?)\/dist\/(.+\.js)$/,
+  find: /^@tipalti\/([^/]+)(?:\/(.+))?$|(^[./]+?)\/dist\/(.+\.js)$/,
   replace: (specifier, name, subpath, rel, filename) => {
     if (rel) return `${rel}/src/${filename}`;
     if (!subpath) return path.resolve(ROOT, `./packages/${name}/src/index.js`);

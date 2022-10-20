@@ -8,7 +8,7 @@ require('@babel/register')({
   only: [
     // specified without the cwd so tests can share helpers
     new RegExp(
-      ['(@percy|packages)', '.+?', '(src|test|.*\\.c?js)']
+      ['(@tipalti|packages)', '.+?', '(src|test|.*\\.c?js)']
       // escape windows path separators and escape the escape
         .join(path.sep === '/' ? '/' : '\\\\')
     )
