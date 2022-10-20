@@ -1,9 +1,9 @@
 import fs from 'fs';
 import url from 'url';
 import path from 'path';
-import logger from '@percy/logger';
-import { colors } from '@percy/logger/utils';
-import { getPackageJSON } from '@percy/cli-command/utils';
+import logger from '@tipalti/percy-logger';
+import { colors } from '@tipalti/percy-logger/utils';
+import { getPackageJSON } from '@tipalti/percy-cli-command/utils';
 
 // filepath where the cache will be read and written to
 const CACHE_FILE = path.resolve(url.fileURLToPath(import.meta.url), '../../.releases');
@@ -44,9 +44,9 @@ function writeToCache(data) {
   }
 }
 
-// Fetch and return release information for @percy/cli.
+// Fetch and return release information for @tipalti/percy-cli.
 async function fetchReleases(pkg) {
-  let { request } = await import('@percy/client/utils');
+  let { request } = await import('@tipalti/percy-client/utils');
 
   // fetch releases from the github api without retries
   let api = 'https://api.github.com/repos/percy/cli/releases';
@@ -82,8 +82,8 @@ export async function checkForUpdate() {
 
     // a new version is available
     if (age !== 0) {
-      log.warn(`\n${age > 0 && age < 10 ? 'A new version of @percy/cli is available!' : (
-        'Heads up! The current version of @percy/cli is more than 10 releases behind!'
+      log.warn(`\n${age > 0 && age < 10 ? 'A new version of @tipalti/percy-cli is available!' : (
+        'Heads up! The current version of @tipalti/percy-cli is more than 10 releases behind!'
       )} ${colors.red(pkg.version)} -> ${colors.green(versions[0])}\n`);
     }
   } catch (err) {

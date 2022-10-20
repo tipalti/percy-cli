@@ -1,10 +1,10 @@
 {
-  "name": "@percy/cli-exec",
+  "name": "@tipalti/percy-cli-exec",
   "version": "1.11.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/percy/cli",
+    "url": "https://github.com/tipalti/percy-cli",
     "directory": "packages/cli-exec"
   },
   "publishConfig": {
@@ -26,13 +26,13 @@
     "test": "node ../../scripts/test",
     "test:coverage": "yarn test --coverage"
   },
-  "@percy/cli": {
+  "@tipalti/percy-cli": {
     "commands": [
       "./dist/exec.js"
     ]
   },
   "dependencies": {
-    "@percy/cli-command": "1.11.0",
+    "@tipalti/percy-cli-command": "1.11.0",
     "cross-spawn": "^7.0.3",
     "which": "^2.0.2"
   }

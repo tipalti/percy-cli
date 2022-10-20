@@ -1,5 +1,5 @@
-import logger from '@percy/logger';
-import PercyConfig from '@percy/config';
+import logger from '@tipalti/percy-logger';
+import PercyConfig from '@tipalti/percy-config';
 import micromatch from 'micromatch';
 import { configSchema } from './config.js';
 import Queue from './queue.js';

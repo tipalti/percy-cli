@@ -1,4 +1,4 @@
-import logger from '@percy/logger';
+import logger from '@tipalti/percy-logger';
 import {
   get, set, del, map,
   joinPropertyPath,

@@ -4,7 +4,7 @@ import url from 'url';
 import path from 'path';
 import Module from 'module';
 
-// Reset various global @percy/config internals for testing
+// Reset various global @tipalti/percy-config internals for testing
 export async function resetPercyConfig(all) {
   // aliased to src during tests
   let { clearMigrations } = await import('../dist/migrate.js');

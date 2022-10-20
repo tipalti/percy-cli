@@ -1,5 +1,5 @@
-import logger from '@percy/logger';
-import { camelcase } from '@percy/config/utils';
+import logger from '@tipalti/percy-logger';
+import { camelcase } from '@tipalti/percy-config/utils';
 import { flagUsage } from './help.js';
 
 // Make it possible to identify parse errors.

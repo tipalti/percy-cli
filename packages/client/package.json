@@ -1,10 +1,10 @@
 {
-  "name": "@percy/client",
+  "name": "@tipalti/percy-client",
   "version": "1.11.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/percy/cli",
+    "url": "https://github.com/tipalti/percy-cli",
     "directory": "packages/client"
   },
   "publishConfig": {
@@ -31,7 +31,7 @@
     "test:coverage": "yarn test --coverage"
   },
   "dependencies": {
-    "@percy/env": "1.11.0",
-    "@percy/logger": "1.11.0"
+    "@tipalti/percy-env": "1.11.0",
+    "@tipalti/percy-logger": "1.11.0"
   }
 }

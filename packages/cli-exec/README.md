@@ -1,6 +1,6 @@
-# @percy/cli-exec
+# @tipalti/percy-cli-exec
 
-Percy CLI commands for running a local snapshot server using [`@percy/core`](./packages/core).
+Percy CLI commands for running a local snapshot server using [`@tipalti/percy-core`](./packages/core).
 
 ## Commands
 <!-- commands -->

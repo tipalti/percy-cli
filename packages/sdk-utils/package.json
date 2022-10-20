@@ -1,10 +1,10 @@
 {
-  "name": "@percy/sdk-utils",
+  "name": "@tipalti/percy-sdk-utils",
   "version": "1.11.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/percy/cli",
+    "url": "https://github.com/tipalti/percy-cli",
     "directory": "packages/sdk-utils"
   },
   "publishConfig": {

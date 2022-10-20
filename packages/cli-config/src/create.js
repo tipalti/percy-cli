@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import command, {
   PercyConfig
-} from '@percy/cli-command';
+} from '@tipalti/percy-cli-command';
 
 const DEFAULT_FILES = {
   rc: '.percyrc',

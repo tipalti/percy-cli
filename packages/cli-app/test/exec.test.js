@@ -1,6 +1,6 @@
-import { setupTest } from '@percy/cli-command/test/helpers';
-import * as ExecPlugin from '@percy/cli-exec';
-import { exec, start, stop, ping } from '@percy/cli-app';
+import { setupTest } from '@tipalti/percy-cli-command/test/helpers';
+import * as ExecPlugin from '@tipalti/percy-cli-exec';
+import { exec, start, stop, ping } from '@tipalti/percy-cli-app';
 
 describe('percy app:exec', () => {
   beforeEach(async () => {

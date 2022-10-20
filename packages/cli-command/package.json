@@ -1,10 +1,10 @@
 {
-  "name": "@percy/cli-command",
+  "name": "@tipalti/percy-cli-command",
   "version": "1.11.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/percy/cli",
+    "url": "https://github.com/tipalti/percy-cli",
     "directory": "packages/cli-command"
   },
   "publishConfig": {
@@ -35,8 +35,8 @@
     "test:coverage": "yarn test --coverage"
   },
   "dependencies": {
-    "@percy/config": "1.11.0",
-    "@percy/core": "1.11.0",
-    "@percy/logger": "1.11.0"
+    "@tipalti/percy-config": "1.11.0",
+    "@tipalti/percy-core": "1.11.0",
+    "@tipalti/percy-logger": "1.11.0"
   }
 }

@@ -1,5 +1,5 @@
 import fs from 'fs';
-import logger from '@percy/logger';
+import logger from '@tipalti/percy-logger';
 import Network from './network.js';
 import { PERCY_DOM } from './api.js';
 import {
@@ -158,11 +158,11 @@ export class Page {
     // wait for any final network activity before capturing the dom snapshot
     await this.network.idle();
 
-    // inject @percy/dom for serialization by evaluating the file contents which adds a global
+    // inject @tipalti/percy-dom for serialization by evaluating the file contents which adds a global
     // PercyDOM object that we can later check against
     /* istanbul ignore next: no instrumenting injected code */
     if (await this.eval(() => !window.PercyDOM)) {
-      this.log.debug('Inject @percy/dom', this.meta);
+      this.log.debug('Inject @tipalti/percy-dom', this.meta);
       let script = await fs.promises.readFile(PERCY_DOM, 'utf-8');
       await this.eval(new Function(script)); /* eslint-disable-line no-new-func */
     }

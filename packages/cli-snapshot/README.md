@@ -1,4 +1,4 @@
-# @percy/cli-snapshot
+# @tipalti/percy-cli-snapshot
 
 Snapshot a list or static directory of web pages.
 

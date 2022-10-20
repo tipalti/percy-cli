@@ -1,4 +1,4 @@
-# @percy/cli-app
+# @tipalti/percy-cli-app
 
 Percy CLI commands for running Percy with native apps.
 

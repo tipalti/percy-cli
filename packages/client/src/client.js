@@ -1,7 +1,7 @@
 import fs from 'fs';
-import PercyEnv from '@percy/env';
-import { git } from '@percy/env/utils';
-import logger from '@percy/logger';
+import PercyEnv from '@tipalti/percy-env';
+import { git } from '@tipalti/percy-env/utils';
+import logger from '@tipalti/percy-logger';
 
 import {
   pool,
@@ -32,7 +32,7 @@ function validateProjectPath(path) {
 }
 
 // PercyClient is used to communicate with the Percy API to create and finalize
-// builds and snapshot. Uses @percy/env to collect environment information used
+// builds and snapshot. Uses @tipalti/percy-env to collect environment information used
 // during build creation.
 export class PercyClient {
   log = logger('client');

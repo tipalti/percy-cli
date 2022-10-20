@@ -1,10 +1,10 @@
 {
-  "name": "@percy/cli-upload",
+  "name": "@tipalti/percy-cli-upload",
   "version": "1.11.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/percy/cli",
+    "url": "https://github.com/tipalti/percy-cli",
     "directory": "packages/cli-upload"
   },
   "publishConfig": {
@@ -26,13 +26,13 @@
     "test": "node ../../scripts/test",
     "test:coverage": "yarn test --coverage"
   },
-  "@percy/cli": {
+  "@tipalti/percy-cli": {
     "commands": [
       "./dist/upload.js"
     ]
   },
   "dependencies": {
-    "@percy/cli-command": "1.11.0",
+    "@tipalti/percy-cli-command": "1.11.0",
     "fast-glob": "^3.2.11",
     "image-size": "^1.0.0"
   }

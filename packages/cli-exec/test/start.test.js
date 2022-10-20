@@ -1,6 +1,6 @@
-import { request } from '@percy/cli-command/utils';
-import { logger, setupTest } from '@percy/cli-command/test/helpers';
-import { start, ping } from '@percy/cli-exec';
+import { request } from '@tipalti/percy-cli-command/utils';
+import { logger, setupTest } from '@tipalti/percy-cli-command/test/helpers';
+import { start, ping } from '@tipalti/percy-cli-exec';
 
 describe('percy exec:start', () => {
   let started;

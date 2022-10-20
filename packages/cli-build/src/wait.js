@@ -1,4 +1,4 @@
-import command from '@percy/cli-command';
+import command from '@tipalti/percy-cli-command';
 
 export const wait = command('wait', {
   description: 'Wait for a build to be finished',

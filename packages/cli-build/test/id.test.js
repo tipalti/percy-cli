@@ -1,5 +1,5 @@
-import { logger, setupTest, createTestServer } from '@percy/cli-command/test/helpers';
-import { id } from '@percy/cli-build';
+import { logger, setupTest, createTestServer } from '@tipalti/percy-cli-command/test/helpers';
+import { id } from '@tipalti/percy-cli-build';
 
 describe('percy build:id', () => {
   let percyServer;

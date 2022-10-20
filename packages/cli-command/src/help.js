@@ -1,4 +1,4 @@
-import logger from '@percy/logger';
+import logger from '@tipalti/percy-logger';
 
 // Helper to return an argument's description including it's default value.
 function argumentDescription(arg) {

@@ -1,10 +1,10 @@
 {
-  "name": "@percy/env",
+  "name": "@tipalti/percy-env",
   "version": "1.11.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/percy/cli",
+    "url": "https://github.com/tipalti/percy-cli",
     "directory": "packages/env"
   },
   "publishConfig": {

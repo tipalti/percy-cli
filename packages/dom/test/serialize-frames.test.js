@@ -1,6 +1,6 @@
 import I, { when } from 'interactor.js';
 import { assert, withExample, parseDOM } from './helpers';
-import serializeDOM from '@percy/dom';
+import serializeDOM from '@tipalti/percy-dom';
 
 describe('serializeFrames', () => {
   let $;

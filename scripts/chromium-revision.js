@@ -23,9 +23,9 @@ EXAMPLE
 }
 
 // Required after usage for speedy help output
-const { request } = await import('@percy/client/utils');
+const { request } = await import('@tipalti/percy-client/utils');
 // eslint-disable-next-line import/no-extraneous-dependencies
-const { default: logger } = await import('@percy/logger');
+const { default: logger } = await import('@tipalti/percy-logger');
 const log = logger('script');
 
 // Chromium GitHub constants
@@ -34,7 +34,7 @@ const GH_TAGS_URL = 'https://github.com/chromium/chromium/branch_commits';
 const GH_HEADERS = {
   Accept: 'application/vnd.github.v3+json',
   // eslint-disable-next-line no-template-curly-in-string
-  'User-Agent': '@percy/cli; ${SCRIPT_NAME}'
+  'User-Agent': '@tipalti/percy-cli; ${SCRIPT_NAME}'
 };
 
 // Google Storage constants

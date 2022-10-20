@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { pathToFileURL } from 'url';
-import command from '@percy/cli-command';
+import command from '@tipalti/percy-cli-command';
 import * as SnapshotConfig from './config.js';
 
 export const snapshot = command('snapshot', {

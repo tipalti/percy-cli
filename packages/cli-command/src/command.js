@@ -1,8 +1,8 @@
-import logger from '@percy/logger';
-import PercyConfig from '@percy/config';
-import { set, del } from '@percy/config/utils';
-import { generatePromise, AbortController, AbortError } from '@percy/core/utils';
-import * as CoreConfig from '@percy/core/config';
+import logger from '@tipalti/percy-logger';
+import PercyConfig from '@tipalti/percy-config';
+import { set, del } from '@tipalti/percy-config/utils';
+import { generatePromise, AbortController, AbortError } from '@tipalti/percy-core/utils';
+import * as CoreConfig from '@tipalti/percy-core/config';
 import * as builtInFlags from './flags.js';
 import formatHelp from './help.js';
 import parse from './parse.js';
@@ -70,7 +70,7 @@ async function runCommandWithContext(parsed) {
 
   // automatically include a preconfigured percy instance
   if (def.percy) {
-    let { Percy } = await import('@percy/core');
+    let { Percy } = await import('@tipalti/percy-core');
 
     // shallow merge with default options
     let conf = { server: false, ...def.percy };

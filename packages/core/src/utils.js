@@ -1,11 +1,11 @@
 import EventEmitter from 'events';
-import { sha256hash } from '@percy/client/utils';
+import { sha256hash } from '@tipalti/percy-client/utils';
 
 export {
   request,
   getPackageJSON,
   hostnameMatches
-} from '@percy/client/utils';
+} from '@tipalti/percy-client/utils';
 
 export {
   Server,

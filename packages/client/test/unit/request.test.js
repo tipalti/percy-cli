@@ -2,7 +2,7 @@ import fs from 'fs';
 import net from 'net';
 import http from 'http';
 import https from 'https';
-import { request, ProxyHttpAgent } from '@percy/client/utils';
+import { request, ProxyHttpAgent } from '@tipalti/percy-client/utils';
 import { port, href, proxyAgentFor } from '../../src/proxy.js';
 
 const ssl = {

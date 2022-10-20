@@ -3,11 +3,11 @@ import fs from 'fs';
 import {
   createResource,
   createRootResource
-} from '@percy/cli-command/utils';
+} from '@tipalti/percy-cli-command/utils';
 
 export {
   yieldAll
-} from '@percy/cli-command/utils';
+} from '@tipalti/percy-cli-command/utils';
 
 // Returns root resource and image resource objects based on image properties. The root resource is
 // a generated DOM designed to display an image at it's native size without margins or padding.

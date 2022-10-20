@@ -1,4 +1,4 @@
-import logger from '@percy/logger';
+import logger from '@tipalti/percy-logger';
 
 // Global CLI flags
 export const verbose = {

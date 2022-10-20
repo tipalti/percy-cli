@@ -1,5 +1,5 @@
 import { logger, dedent } from './helpers.js';
-import command from '@percy/cli-command';
+import command from '@tipalti/percy-cli-command';
 
 describe('Command', () => {
   beforeEach(async () => {
@@ -88,7 +88,7 @@ describe('Command', () => {
 
     await test();
 
-    let { Percy } = await import('@percy/core');
+    let { Percy } = await import('@tipalti/percy-core');
     expect(test.percy).toBeInstanceOf(Percy);
   });
 

@@ -1,5 +1,5 @@
-import command from '@percy/cli-command';
-import * as ExecPlugin from '@percy/cli-exec';
+import command from '@tipalti/percy-cli-command';
+import * as ExecPlugin from '@tipalti/percy-cli-exec';
 
 export const ping = ExecPlugin.ping;
 export const stop = ExecPlugin.stop;

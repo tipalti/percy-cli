@@ -1,5 +1,5 @@
 import helpers from './helpers.js';
-import utils from '@percy/sdk-utils';
+import utils from '@tipalti/percy-sdk-utils';
 
 describe('SDK Utils', () => {
   beforeEach(async () => {
@@ -129,7 +129,7 @@ describe('SDK Utils', () => {
   describe('fetchPercyDOM()', () => {
     let { fetchPercyDOM } = utils;
 
-    it('fetches @percy/dom from the CLI API and caches the result', async () => {
+    it('fetches @tipalti/percy-dom from the CLI API and caches the result', async () => {
       let domScript = jasmine.stringMatching(/\b(PercyDOM)\b/);
       await expectAsync(fetchPercyDOM()).toBeResolvedTo(domScript);
       await expectAsync(fetchPercyDOM()).toBeResolvedTo(domScript);

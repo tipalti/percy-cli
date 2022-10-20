@@ -1,12 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
-import logger from '@percy/logger';
-import { normalize } from '@percy/config/utils';
+import logger from '@tipalti/percy-logger';
+import { normalize } from '@tipalti/percy-config/utils';
 import { getPackageJSON, Server } from './utils.js';
 
 // need require.resolve until import.meta.resolve can be transpiled
-export const PERCY_DOM = createRequire(import.meta.url).resolve('@percy/dom');
+export const PERCY_DOM = createRequire(import.meta.url).resolve('@tipalti/percy-dom');
 
 // Returns a URL encoded string of nested query params
 function encodeURLSearchParams(subj, prefix) {
@@ -72,14 +72,14 @@ export function createPercyServer(percy, port) {
     .route('get', '/percy/idle', async (req, res) => res.json(200, {
       success: await percy.idle().then(() => true)
     }))
-  // convenient @percy/dom bundle
+  // convenient @tipalti/percy-dom bundle
     .route('get', '/percy/dom.js', (req, res) => {
       return res.file(200, PERCY_DOM);
     })
-  // legacy agent wrapper for @percy/dom
+  // legacy agent wrapper for @tipalti/percy-dom
     .route('get', '/percy-agent.js', async (req, res) => {
       logger('core:server').deprecated([
-        'It looks like you’re using @percy/cli with an older SDK.',
+        'It looks like you’re using @tipalti/percy-cli with an older SDK.',
         'Please upgrade to the latest version to fix this warning.',
         'See these docs for more info: https:docs.percy.io/docs/migrating-to-percy-cli'
       ].join(' '));

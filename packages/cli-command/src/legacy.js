@@ -1,7 +1,7 @@
-import { merge } from '@percy/config/utils';
+import { merge } from '@tipalti/percy-config/utils';
 import { command } from './command.js';
 
-// Legacy flags for older commands that inadvertently import a newer @percy/cli-command
+// Legacy flags for older commands that inadvertently import a newer @tipalti/percy-cli-command
 export const legacyFlags = {
   config: {},
   logging: {},

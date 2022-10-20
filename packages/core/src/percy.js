@@ -1,6 +1,6 @@
-import PercyClient from '@percy/client';
-import PercyConfig from '@percy/config';
-import logger from '@percy/logger';
+import PercyClient from '@tipalti/percy-client';
+import PercyConfig from '@tipalti/percy-config';
+import logger from '@tipalti/percy-logger';
 import Browser from './browser.js';
 
 import {
@@ -56,7 +56,7 @@ export class Percy {
     testing,
     // configuration filepath
     config: configFile,
-    // provided to @percy/client
+    // provided to @tipalti/percy-client
     token,
     clientInfo = '',
     environmentInfo = '',

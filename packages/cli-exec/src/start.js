@@ -1,4 +1,4 @@
-import command from '@percy/cli-command';
+import command from '@tipalti/percy-cli-command';
 
 export const start = command('start', {
   description: 'Starts a locally running Percy process',
@@ -6,7 +6,7 @@ export const start = command('start', {
   percy: { server: true }
 }, async function*({ percy, exit }) {
   if (!percy) exit(0, 'Percy is disabled');
-  let { yieldFor } = await import('@percy/cli-command/utils');
+  let { yieldFor } = await import('@tipalti/percy-cli-command/utils');
 
   // start percy
   yield* percy.yield.start();

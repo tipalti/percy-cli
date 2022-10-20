@@ -1,5 +1,5 @@
-import command from '@percy/cli-command';
-import flags from '@percy/cli-command/flags';
+import command from '@tipalti/percy-cli-command';
+import flags from '@tipalti/percy-cli-command/flags';
 
 export const id = command('id', {
   description: 'Prints the build ID from a locally running Percy process',
@@ -8,7 +8,7 @@ export const id = command('id', {
 }, async function*({ flags, percy, log, exit }) {
   if (!percy) exit(0, 'Percy is disabled');
 
-  let { request } = await import('@percy/cli-command/utils');
+  let { request } = await import('@tipalti/percy-cli-command/utils');
   let ping = `http://localhost:${flags.port}/percy/healthcheck`;
   let build = null;
 

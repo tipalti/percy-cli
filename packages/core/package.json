@@ -1,10 +1,10 @@
 {
-  "name": "@percy/core",
+  "name": "@tipalti/percy-core",
   "version": "1.11.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/percy/cli",
+    "url": "https://github.com/tipalti/percy-cli",
     "directory": "packages/core"
   },
   "publishConfig": {
@@ -39,10 +39,10 @@
     "test:types": "tsd"
   },
   "dependencies": {
-    "@percy/client": "1.11.0",
-    "@percy/config": "1.11.0",
-    "@percy/dom": "1.11.0",
-    "@percy/logger": "1.11.0",
+    "@tipalti/percy-client": "1.11.0",
+    "@tipalti/percy-config": "1.11.0",
+    "@tipalti/percy-dom": "1.11.0",
+    "@tipalti/percy-logger": "1.11.0",
     "content-disposition": "^0.5.4",
     "cross-spawn": "^7.0.3",
     "extract-zip": "^2.0.1",

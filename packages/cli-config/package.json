@@ -1,10 +1,10 @@
 {
-  "name": "@percy/cli-config",
+  "name": "@tipalti/percy-cli-config",
   "version": "1.11.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/percy/cli",
+    "url": "https://github.com/tipalti/percy-cli",
     "directory": "packages/cli-config"
   },
   "publishConfig": {
@@ -26,12 +26,12 @@
     "test": "node ../../scripts/test",
     "test:coverage": "yarn test --coverage"
   },
-  "@percy/cli": {
+  "@tipalti/percy-cli": {
     "commands": [
       "./dist/config.js"
     ]
   },
   "dependencies": {
-    "@percy/cli-command": "1.11.0"
+    "@tipalti/percy-cli-command": "1.11.0"
   }
 }

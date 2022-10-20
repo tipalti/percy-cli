@@ -1,10 +1,10 @@
 {
-  "name": "@percy/cli-snapshot",
+  "name": "@tipalti/percy-cli-snapshot",
   "version": "1.11.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/percy/cli",
+    "url": "https://github.com/tipalti/percy-cli",
     "directory": "packages/cli-snapshot"
   },
   "publishConfig": {
@@ -26,13 +26,13 @@
     "test": "node ../../scripts/test",
     "test:coverage": "yarn test --coverage"
   },
-  "@percy/cli": {
+  "@tipalti/percy-cli": {
     "commands": [
       "./dist/snapshot.js"
     ]
   },
   "dependencies": {
-    "@percy/cli-command": "1.11.0",
+    "@tipalti/percy-cli-command": "1.11.0",
     "yaml": "^2.0.0"
   }
 }

@@ -1,8 +1,8 @@
 import fs from 'fs';
-import logger from '@percy/logger/test/helpers';
-import { mockgit } from '@percy/env/test/helpers';
-import { sha256hash, base64encode } from '@percy/client/utils';
-import PercyClient from '@percy/client';
+import logger from '@tipalti/percy-logger/test/helpers';
+import { mockgit } from '@tipalti/percy-env/test/helpers';
+import { sha256hash, base64encode } from '@tipalti/percy-client/utils';
+import PercyClient from '@tipalti/percy-client';
 import api from './helpers.js';
 
 describe('PercyClient', () => {

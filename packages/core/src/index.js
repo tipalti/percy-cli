@@ -1,4 +1,4 @@
-import PercyConfig from '@percy/config';
+import PercyConfig from '@tipalti/percy-config';
 import * as CoreConfig from './config.js';
 
 PercyConfig.addSchema(CoreConfig.schemas);

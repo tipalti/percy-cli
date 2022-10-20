@@ -1,5 +1,5 @@
 import { mockgit } from './helpers.js';
-import PercyEnv from '@percy/env';
+import PercyEnv from '@tipalti/percy-env';
 
 describe('Jenkins', () => {
   let env;

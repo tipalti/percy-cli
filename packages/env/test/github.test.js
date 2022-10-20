@@ -1,8 +1,8 @@
 import fs from 'fs';
 import url from 'url';
 import path from 'path';
-import PercyEnv from '@percy/env';
-import { github } from '@percy/env/utils';
+import PercyEnv from '@tipalti/percy-env';
+import { github } from '@tipalti/percy-env/utils';
 
 const GITHUB_EVENT_PATH = path.join(path.dirname(
   url.fileURLToPath(import.meta.url)

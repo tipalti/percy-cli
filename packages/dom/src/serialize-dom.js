@@ -4,6 +4,7 @@ import serializeFrames from './serialize-frames';
 import serializeCSSOM from './serialize-cssom';
 import serializeCanvas from './serialize-canvas';
 import serializeVideos from './serialize-video';
+import { cloneNodeAndShadow, getOuterHTML } from './wc-clone';
 
 // Returns a copy or new doctype for a document.
 function doctype(dom) {
@@ -32,7 +33,7 @@ export function serializeDOM(options) {
 
   prepareDOM(dom);
 
-  let clone = dom.cloneNode(true);
+  let clone = cloneNodeAndShadow(true);
   serializeInputs(dom, clone);
   serializeFrames(dom, clone, { enableJavaScript });
   serializeVideos(dom, clone);
@@ -52,7 +53,7 @@ export function serializeDOM(options) {
     }
   }
 
-  return doctype(dom) + doc.outerHTML;
+  return doctype(dom) + getOuterHTML(doc);
 }
 
 export default serializeDOM;

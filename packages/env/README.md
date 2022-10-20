@@ -1,7 +1,7 @@
-# @percy/env
+# @tipalti/percy-env
 
 This package provides various CI/CD support for Percy by coalescing different environment variables
-into a common interface for consumption by `@percy/client`.
+into a common interface for consumption by `@tipalti/percy-client`.
 
 ## Supported Environments
 

@@ -1,11 +1,11 @@
-import { fs, logger, setupTest, createTestServer } from '@percy/cli-command/test/helpers';
-import snapshot from '@percy/cli-snapshot';
+import { fs, logger, setupTest, createTestServer } from '@tipalti/percy-cli-command/test/helpers';
+import snapshot from '@tipalti/percy-cli-snapshot';
 
 describe('percy snapshot <sitemap>', () => {
   let server;
 
   beforeEach(async () => {
-    snapshot.packageInformation = { name: '@percy/cli-snapshot' };
+    snapshot.packageInformation = { name: '@tipalti/percy-cli-snapshot' };
     process.env.PERCY_TOKEN = '<<PERCY_TOKEN>>';
     await setupTest();
 

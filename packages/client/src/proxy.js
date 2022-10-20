@@ -2,7 +2,7 @@ import net from 'net';
 import tls from 'tls';
 import http from 'http';
 import https from 'https';
-import logger from '@percy/logger';
+import logger from '@tipalti/percy-logger';
 
 const CRLF = '\r\n';
 const STATUS_REG = /^HTTP\/1.[01] (\d*)/;

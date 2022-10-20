@@ -1,4 +1,4 @@
-import logger from '@percy/logger';
+import logger from '@tipalti/percy-logger';
 import Queue from './queue.js';
 import {
   normalizeURL,

@@ -1,4 +1,4 @@
-# @percy/cli-build
+# @tipalti/percy-cli-build
 
 Commands for interacting with Percy builds
 

@@ -1,7 +1,7 @@
-import { sha256hash, base64encode } from '@percy/client/utils';
+import { sha256hash, base64encode } from '@tipalti/percy-client/utils';
 import { logger, api, setupTest, createTestServer, dedent } from './helpers/index.js';
-import { waitFor } from '@percy/core/utils';
-import Percy from '@percy/core';
+import { waitFor } from '@tipalti/percy-core/utils';
+import Percy from '@tipalti/percy-core';
 
 describe('Snapshot', () => {
   let percy, server, testDOM;

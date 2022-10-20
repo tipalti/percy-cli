@@ -1,7 +1,7 @@
 import path from 'path';
-import { PercyConfig } from '@percy/cli-command';
-import { fs, logger, setupTest } from '@percy/cli-command/test/helpers';
-import { migrate } from '@percy/cli-config';
+import { PercyConfig } from '@tipalti/percy-cli-command';
+import { fs, logger, setupTest } from '@tipalti/percy-cli-command/test/helpers';
+import { migrate } from '@tipalti/percy-cli-config';
 
 describe('percy config:migrate', () => {
   beforeEach(async () => {

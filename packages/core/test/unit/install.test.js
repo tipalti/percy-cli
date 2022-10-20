@@ -1,7 +1,7 @@
 import path from 'path';
-import logger from '@percy/logger/test/helpers';
-import { mockfs, fs } from '@percy/config/test/helpers';
-import { mockRequests } from '@percy/client/test/helpers';
+import logger from '@tipalti/percy-logger/test/helpers';
+import { mockfs, fs } from '@tipalti/percy-config/test/helpers';
+import { mockRequests } from '@tipalti/percy-client/test/helpers';
 import install from '../../src/install.js';
 
 const CHROMIUM_REVISIONS = install.chromium.revisions;

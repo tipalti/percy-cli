@@ -1,6 +1,6 @@
 import { logger, api, setupTest, createTestServer } from './helpers/index.js';
 import { generatePromise, AbortController } from '../src/utils.js';
-import Percy from '@percy/core';
+import Percy from '@tipalti/percy-core';
 
 describe('Percy', () => {
   let percy, server;

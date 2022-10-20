@@ -1,5 +1,5 @@
-import logger from '@percy/logger';
-import { ANSI_REG } from '@percy/logger/utils';
+import logger from '@tipalti/percy-logger';
+import { ANSI_REG } from '@tipalti/percy-logger/utils';
 
 const ELAPSED_REG = /\s\S*?\(\d+ms\)\S*/;
 const NEWLINE_REG = /\r\n/g;

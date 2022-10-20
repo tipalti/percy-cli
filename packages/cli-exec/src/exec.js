@@ -1,4 +1,4 @@
-import command from '@percy/cli-command';
+import command from '@tipalti/percy-cli-command';
 import start from './start.js';
 import stop from './stop.js';
 import ping from './ping.js';

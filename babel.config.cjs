@@ -46,8 +46,8 @@ module.exports = {
       ['module-resolver', {
         cwd: __dirname,
         alias: {
-          '^@percy/((?!dom)[^/]+)$': './packages/\\1/src/index.js',
-          '^@percy/([^/]+)/((?!test|src).+)$': './packages/\\1/src/\\2'
+          '^@tipalti/percy-((?!dom)[^/]+)$': './packages/\\1/src/index.js',
+          '^@tipalti/percy-([^/]+)/((?!test|src).+)$': './packages/\\1/src/\\2'
         }
       }]
     ]

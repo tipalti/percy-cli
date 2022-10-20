@@ -1,6 +1,6 @@
 import mime from 'mime-types';
-import logger from '@percy/logger';
-import { request as makeRequest } from '@percy/client/utils';
+import logger from '@tipalti/percy-logger';
+import { request as makeRequest } from '@tipalti/percy-client/utils';
 import { normalizeURL, hostnameMatches, createResource, waitFor } from './utils.js';
 
 const MAX_RESOURCE_SIZE = 15 * (1024 ** 2); // 15MB

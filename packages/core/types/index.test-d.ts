@@ -1,5 +1,5 @@
 import { expectType, expectError } from 'tsd';
-import Percy, { PercyOptions, PercyConfigOptions } from '@percy/core';
+import Percy, { PercyOptions, PercyConfigOptions } from '@tipalti/percy-core';
 
 // PercyOptions
 const percyOptions: PercyOptions = {

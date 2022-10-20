@@ -1,4 +1,4 @@
-import PercyEnv from '@percy/env';
+import PercyEnv from '@tipalti/percy-env';
 
 describe('GitLab', () => {
   let env;

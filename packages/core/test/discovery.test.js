@@ -1,6 +1,6 @@
-import { sha256hash } from '@percy/client/utils';
+import { sha256hash } from '@tipalti/percy-client/utils';
 import { logger, api, setupTest, createTestServer, dedent } from './helpers/index.js';
-import Percy from '@percy/core';
+import Percy from '@tipalti/percy-core';
 
 describe('Discovery', () => {
   let percy, server, captured;

@@ -1,4 +1,4 @@
-const utils = require('@percy/sdk-utils');
+const utils = require('@tipalti/percy-sdk-utils');
 
 const helpers = {
   async setupTest({ logger = true } = {}) {

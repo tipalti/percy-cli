@@ -1,5 +1,5 @@
 import EventEmitter from 'events';
-import logger from '@percy/logger';
+import logger from '@tipalti/percy-logger';
 
 export class Session extends EventEmitter {
   #callbacks = new Map();

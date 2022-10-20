@@ -1,6 +1,6 @@
-import logger from '@percy/logger/test/helpers';
+import logger from '@tipalti/percy-logger/test/helpers';
 import { resetPercyConfig, mockfs, fs } from './helpers.js';
-import PercyConfig from '@percy/config';
+import PercyConfig from '@tipalti/percy-config';
 
 describe('PercyConfig', () => {
   beforeEach(async () => {

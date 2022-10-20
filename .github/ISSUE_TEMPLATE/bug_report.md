@@ -25,12 +25,12 @@ https://www.browserstack.com/contact#technical-support
 Briefly describe the issue you are experiencing (or the feature you want to see
 added to Percy). Tell us what you were trying to do and what happened
 instead. Remember, this is _not_ a place to ask questions. For that, go to
-https://github.com/percy/cli/discussions/new
+https://github.com/tipalti/percy-cli/discussions/new
 
 ## Environment
 
 - Node version:
-- `@percy/cli` version:
+- `@tipalti/percy-cli` version:
 - Version of Percy SDK you’re using:
 - If needed, a build or snapshot ID:
 - OS version:
