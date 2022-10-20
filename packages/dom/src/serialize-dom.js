@@ -33,7 +33,7 @@ export function serializeDOM(options) {
 
   prepareDOM(dom);
 
-  let clone = cloneNodeAndShadow(true);
+  let clone = cloneNodeAndShadow(dom);
   serializeInputs(dom, clone);
   serializeFrames(dom, clone, { enableJavaScript });
   serializeVideos(dom, clone);
